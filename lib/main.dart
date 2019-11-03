@@ -21,23 +21,52 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: Color(0xff812690), //#812690
         title: Text('Git Hub'),
       ),
+      backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
+          /// Picture
           Expanded(
-            child: Container(color: Colors.green),
+            child: Center(
+              child: Icon(
+                Icons.home,
+                color: Colors.grey,
+                size: 100.0,
+              ),
+            ),
           ),
+
+          /// Name
           Expanded(
-            child: Container(color: Colors.red),
+            child: Center(
+              child: Text(
+                'Setroc Leuname',
+                style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold),
+              ),
+            ),
           ),
+
+          /// Repository list
           Expanded(
-            child: Container(color: Colors.blue),
-          ),
-          Expanded(
-            child: Container(color: Colors.yellow),
-          ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Container(
+                    color: Color(0xff24292E),
+                    child: Center(
+                      child: Text(
+                        'Repository 1',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ))
+              ],
+            ),
+          )
         ],
       ),
     );
