@@ -27,9 +27,16 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: Container(
-              color: Colors.green,
-            ),
+            child: Container(color: Colors.green),
+          ),
+          Expanded(
+            child: Container(color: Colors.red),
+          ),
+          Expanded(
+            child: Container(color: Colors.blue),
+          ),
+          Expanded(
+            child: Container(color: Colors.yellow),
           ),
         ],
       ),
